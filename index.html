@@ -4,12 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>The Place Eatery</title>
+
+    <style>
+      header {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .logo {
+        height: 50px;
+        width: 120px;
+      }
+
+      .header-list {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      li {
+        list-style: none;
+        margin-right: 15px;
+      }
+    </style>
   </head>
+
   <body>
     <header>
-      <img src="./images/icon.png" alt=" The place  logo" />
-      <ol>
+      <img src="./images/icon.png" alt=" The place  logo" class="logo" />
+
+      <ol class="header-list">
         <li>Home</li>
         <li>About Us</li>
         <li>Restarant</li>
@@ -18,6 +42,10 @@
         <li>Career</li>
         <li>Contact</li>
       </ol>
+
+      <div>
+        <input type="text" />
+      </div>
     </header>
   </body>
 </html>
