@@ -19,67 +19,75 @@
     <title>The Place Eatery</title>
 
     <style>
-      /* header {
-        display: flex;
-        justify-content: space-between;
-        margin: 16px 30px 16px 60px;
-      } */
+      header {
+        background-image: url("images/abula.jpeg");
+        height: 70%;
+      }
+
+      .nav-bar {
+        background-color: #b41919;
+      }
 
       .logo {
         height: 50px;
         width: 120px;
+        margin: 0 50px;
       }
 
-      .header-list {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      li {
-        list-style: none;
-        margin-right: 15px;
+      .nav-bar-link {
+        color: #f4d2a2;
       }
 
       .header-search {
         display: flex;
         justify-content: space-between;
+        margin-right: 30px;
       }
 
       .header-search-text {
-        height: 35px;
+        height: 40px;
         border: 0.5px solid #b41919;
         border-radius: 30px;
         margin-right: 10px;
       }
 
       .header-search-Icon {
-        height: 35px;
-        width: 35px;
+        height: 40px;
+        width: 40px;
         border: none;
         border-radius: 45%;
         background-color: #b41919;
-        text-align: center;
+      }
+
+      .home-text {
+        display: flex;
+        margin: 20px 50px 0;
       }
     </style>
   </head>
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid nav-bar">
           <a class="navbar-brand" href="#">
             <img src="./images/icon.png" alt=" The place  logo" class="logo" />
           </a>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <li class="nav-item nav-bar-link">
+                <a
+                  class="nav-link active nav-bar-link"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
               </li>
 
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle nav-bar-link"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -99,7 +107,7 @@
 
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle nav-bar-link"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -108,7 +116,9 @@
                   Resturant
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item nav-bar-link" href="#">Action</a>
+                  </li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
@@ -119,7 +129,7 @@
 
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle nav-bar-link"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -139,7 +149,7 @@
 
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle nav-bar-link"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -159,7 +169,7 @@
 
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle nav-bar-link"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -178,17 +188,17 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact </a>
+                <a class="nav-link nav-bar-link" href="#">Contact </a>
               </li>
             </ul>
 
             <form class="d-flex" role="search">
               <input
-                class="form-control me-2"
+                class="form-control me-2 header-search-text"
                 type="search"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-success" type="submit">
+              <button class="btn header-search-Icon" type="submit">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -206,6 +216,13 @@
           </div>
         </div>
       </nav>
+
+      <div class="home-text">
+        <a class="nav-link active nav-bar-link" aria-current="page" href="#"
+          >Home
+        </a>
+        <p>> <span>Resturant</span></p>
+      </div>
     </header>
   </body>
 </html>
